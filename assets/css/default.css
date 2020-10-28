@@ -5,6 +5,94 @@
 a {
   color: lightgray;
 }
+
+.sl-body {
+  background-color: #c3c2cb;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.sl-background {
+  width: 100%;
+  height: 100vh;
+}
+
+.sl-guitar-svg {
+  position: absolute;
+  width: 5%;
+  margin-top: -3vh;
+}
+
+.sl-guitar-svg svg {
+  fill:none;
+  stroke:#ffffff;
+  stroke-width:0;
+  stroke-miterlimit:10;
+  stroke-dasharray: 2821.455322265625;
+  animation: dash 5s linear forwards;
+  width: 100%;
+  animation-delay: .5s;
+}
+
+.sl-text-svg {
+  position: absolute;
+  width: 35%;
+  margin-top: 22vh;
+  pointer-events: none;
+  animation: click-delay 1s linear forwards;
+  animation-delay: 14.5s;
+}
+
+.sl-text-svg svg {
+  fill:none;
+  stroke:#ffffff;
+  stroke-width: 0;
+  stroke-miterlimit:10;
+  stroke-dasharray: 4010.2470703125;
+  animation: dash-text 9s linear forwards;
+  width: 100%;
+  animation-delay: 6s;
+}
+
+@keyframes dash {
+  from {
+    stroke-width:4;
+    stroke-dashoffset: 2821.455322265625;
+  }
+
+  to {
+    stroke-width:4;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash-text {
+  from {
+    stroke-width: 1.75;
+    stroke-dashoffset: 4010.2470703125;
+  }
+
+  to {
+    stroke-width: 1.75;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes click-delay {
+  from {
+    pointer-events: none;
+  }
+  to {
+    pointer-events: all;
+  }
+}
+
+
+
 .so-body {
   width: 100%;
   padding: 0;
