@@ -289,6 +289,10 @@ a {
   background-image: url("../images/info-overlay-small.png");
 }
 
+.so-text-box a {
+  pointer-events: auto;
+}
+
 /* .so-text-box--image {
   position: absolute;
   left: 65px;
