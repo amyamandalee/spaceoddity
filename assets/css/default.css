@@ -27,6 +27,7 @@ a {
   margin-top: -3vh;
 }
 
+
 .sl-guitar-svg svg {
   fill:none;
   stroke:#ffffff;
@@ -37,6 +38,7 @@ a {
   width: 100%;
   animation-delay: .5s;
 }
+
 
 .sl-text-svg {
   position: absolute;
@@ -50,12 +52,14 @@ a {
 .sl-text-svg svg {
   fill:none;
   stroke:#ffffff;
-  stroke-width: 0;
+  /* stroke-width: 0; */
+  stroke-width: 1.75;
   stroke-miterlimit:10;
   stroke-dasharray: 4010.2470703125;
   animation: dash-text 9s linear forwards;
   width: 100%;
   animation-delay: 6s;
+  opacity: 0;
 }
 
 @keyframes dash {
@@ -72,12 +76,12 @@ a {
 
 @keyframes dash-text {
   from {
-    stroke-width: 1.75;
+    opacity: 1;
     stroke-dashoffset: 4010.2470703125;
   }
 
   to {
-    stroke-width: 1.75;
+    opacity: 1;
     stroke-dashoffset: 0;
   }
 }
@@ -91,6 +95,10 @@ a {
   }
 }
 
+.sl-text-svg svg:hover {
+  stroke: #f7f7f7;
+  stroke-width: 4;
+}
 
 
 .so-body {
